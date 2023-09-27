@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin's Panel</title>
+    <link rel="stylesheet" href="./admin.css" />
+  </head>
+  <body>
+    <div class="admin-panel">
+      <div class="player-names">
+        <label for="batsman1-name">Batsman 1:</label>
+        <input
+          id="batsman1-name"
+          type="text"
+          placeholder="Enter Batsman 1 Name"
+        />
+        <button
+          onclick="setBatsman1(document.getElementById('batsman1-name').value)"
+        >
+          Set
+        </button>
+
+        <label for="batsman2-name">Batsman 2:</label>
+        <input
+          id="batsman2-name"
+          type="text"
+          placeholder="Enter Batsman 2 Name"
+        />
+        <button
+          onclick="setBatsman2(document.getElementById('batsman2-name').value)"
+        >
+          Set
+        </button>
+
+        <label for="team-name">Team Name:</label>
+        <input id="team-name" type="text" placeholder="Enter Team Name" />
+        <button
+          onclick="setTeamName(document.getElementById('team-name').value)"
+        >
+          Set
+        </button>
+
+        <label for="bowler-name">Bowler:</label>
+        <input id="bowler-name" type="text" placeholder="Enter Bowler Name" />
+        <button
+          onclick="setBowler(document.getElementById('bowler-name').value)"
+        >
+          Set
+        </button>
+      </div>
+
+      <!-- Scoring Buttons -->
+      <div class="scoring-buttons">
+        <button onclick="updateScore(0)">Dot Ball</button>
+        <button onclick="updateScore(1)">1 Run</button>
+        <button onclick="updateScore(2)">2 Runs</button>
+        <button onclick="updateScore(3)">3 Runs</button>
+        <button onclick="updateScore(4)" style="background-color: green">
+          4 Runs
+        </button>
+        <button onclick="updateScore(6)" style="background-color: blue">
+          6 Runs
+        </button>
+        <button
+          onclick="updateExtraRun(1, 'wide')"
+          style="background-color: gray"
+        >
+          Wide + 1 Run
+        </button>
+        <button
+          onclick="updateExtraRun(1, 'noball')"
+          style="background-color: gray"
+        >
+          No Ball + 1 Run
+        </button>
+        <button onclick="bowlerWicket()" style="background-color: red">
+          Bowled
+        </button>
+        <button onclick="resetGame()" style="background-color: darkred">
+          Reset Game
+        </button>
+        <button onclick="undoLastAction()" style="background-color: aqua">
+          Undo
+        </button>
+      </div>
+    </div>
+    <script src="./admin.js"></script>
+  </body>
+</html>

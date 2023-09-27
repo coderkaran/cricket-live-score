@@ -1,0 +1,385 @@
+body {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.mainBox {
+  margin-top: 100px;
+  height: 80px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mainContainer {
+  height: 80px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.leftContainer {
+  height: 80px;
+  width: 50%;
+  border: 1px solid rgb(3, 3, 207);
+  border-radius: 25px;
+  background-image: linear-gradient(
+    rgb(1, 1, 129),
+    Black,
+    Black,
+    black,
+    Black,
+    rgb(1, 1, 129)
+  );
+  transform: translateX(-683px);
+  animation-name: leftCont;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+}
+@keyframes leftCont {
+  0% {
+    transform: translateX(-683px);
+  }
+  50% {
+    transform: translateX(-0px);
+  }
+  100% {
+    transform: translateX(-547px);
+  }
+}
+
+/* Middle Container Desig */
+
+.middleContainer {
+  height: 80px;
+  width: 80%;
+  display: flex;
+  position: absolute;
+  transform: scale(0%);
+  animation-name: midCont;
+  animation-duration: 0.5s;
+  animation-delay: 1.5s;
+  animation-fill-mode: forwards;
+  z-index: 1;
+}
+@keyframes midCont {
+  0% {
+    transform: scale(0%);
+  }
+  100% {
+    transform: scale(100%);
+  }
+}
+.meidLeft {
+  height: 80px;
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid rgb(3, 3, 207);
+  border-radius: 25px;
+  background-image: linear-gradient(
+    rgb(1, 1, 129),
+    Black,
+    Black,
+    black,
+    Black,
+    rgb(1, 1, 129)
+  );
+  animation-name: rotate;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 2s;
+}
+@keyframes rotate {
+  0% {
+    transform: rotateX(0deg);
+  }
+  100% {
+    transform: rotateX(1080deg);
+  }
+}
+
+/* midLeftLeft */
+
+.meidLeftleft {
+  height: 80px;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.batsman1Img {
+  height: 90px;
+  width: 35%;
+  margin-bottom: 12px;
+  margin-left: 1px;
+  border-radius: 20px;
+  background-image: url("../images/Rohit1.PNG");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.batsman1NameRunBall {
+  height: 70px;
+  width: 65%;
+  position: relative;
+  text-align: center;
+  position: relative;
+}
+.batsman1RunBall {
+  height: 30px;
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.batsman1Name {
+  position: absolute;
+  right: 51px;
+  bottom: -12px;
+}
+.meidLeftRight {
+  height: 80px;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.batsman2Img {
+  height: 90px;
+  width: 35%;
+  margin-bottom: 12px;
+  margin-left: 1px;
+  border-radius: 20px;
+  background-image: url("../images/Rohit1.PNG");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.batsman2NameRunBall {
+  height: 70px;
+  width: 65%;
+  position: relative;
+  text-align: center;
+  position: relative;
+}
+.batsman2RunBall {
+  height: 30px;
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.batsman2Name {
+  position: absolute;
+  right: 51px;
+  bottom: -12px;
+}
+
+/* --------- */
+
+.meidMid {
+  height: 80px;
+  width: 30%;
+  position: relative;
+}
+.meidRight {
+  height: 80px;
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid rgb(9, 99, 0);
+  border-radius: 25px;
+  background-image: linear-gradient(
+    rgb(9, 99, 0),
+    Black,
+    Black,
+    black,
+    Black,
+    rgb(7, 85, 0)
+  );
+  animation-name: moving;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 2s;
+}
+@keyframes moving {
+  0% {
+    transform: rotateX(0deg);
+  }
+  100% {
+    transform: rotateX(1080deg);
+  }
+}
+.bowlerImage {
+  height: 90px;
+  width: 25%;
+  border-radius: 20px;
+  margin-bottom: 12px;
+  background-image: url("../images/Rohit1.PNG");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.meidRightRight {
+  height: 80px;
+  width: 75%;
+  border-radius: 20px;
+}
+.bowlerNameandRunBall {
+  height: 40px;
+  width: 100%;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bowlerRunBallOnly {
+  height: 40px;
+  width: 28%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bowlerNameOnly {
+  height: 40px;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bowlStatus {
+  height: 40px;
+  width: 100%;
+  border-radius: 20px;
+  text-align: center;
+}
+/* #ball-status div {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 5px;
+  text-align: center;
+  line-height: 20px;
+  background-color: #ddd;
+} */
+
+.meidMidup {
+  height: 35px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid rgb(185, 1, 185);
+  border-radius: 25px;
+  background-image: linear-gradient(
+    rgb(168, 1, 160),
+    rgb(18, 0, 26),
+    rgb(17, 0, 24),
+    Black,
+    rgb(168, 1, 160)
+  );
+  position: absolute;
+  transform: translateY(-50px);
+  opacity: 0;
+  z-index: 1;
+  animation-name: midtop;
+  animation-duration: 0.5s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+}
+@keyframes midtop {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+.meidMiddown {
+  height: 60px;
+  width: 100%;
+  border: 1px solid rgb(185, 1, 185);
+  border-radius: 25px;
+  background-image: linear-gradient(
+    rgb(121, 1, 168),
+    rgb(18, 0, 26),
+    rgb(20, 0, 27),
+    rgb(17, 0, 24),
+    Black,
+    rgb(121, 1, 168)
+  );
+  position: absolute;
+  transform: translateY(50px);
+  opacity: 0;
+  z-index: -1;
+  animation-name: middon;
+  animation-duration: 0.5s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+}
+@keyframes middon {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(20px);
+    opacity: 1;
+  }
+}
+.battingTeamName {
+  color: white;
+  height: 35px;
+  width: 70%;
+  padding-right: 5px;
+  padding-left: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(248, 4, 154);
+  border-radius: 25px;
+}
+.runwkt {
+  display: flex;
+}
+
+/* Middle End */
+
+.rightContainer {
+  height: 80px;
+  width: 50%;
+  border: 1px solid rgb(14, 170, 0);
+  border-radius: 25px;
+  background-image: linear-gradient(
+    rgb(7, 85, 0),
+    Black,
+    Black,
+    black,
+    Black,
+    rgb(7, 85, 0)
+  );
+  transform: translateX(683px);
+  animation-name: rightCont;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+}
+@keyframes rightCont {
+  0% {
+    transform: translateX(683px);
+  }
+  50% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(547px);
+  }
+}
